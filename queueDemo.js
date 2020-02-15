@@ -85,38 +85,3 @@ queue.print();
 queue.enqueue(3, 4);
 queue.print();
 
-
-const sleep = async function(time) {
-    return await new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve();
-            console.log(1111)
-        }, time)
-    })
-}
-
-console.log(sleep(1000));
-console.log(1111111)
-
-const sleep1 = async function(time) {
-    return await new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(1);
-            console.log(2222);
-        }, time)
-    })
-}
-console.log(sleep1(2000));
-console.log(`2222222`)
-
-// const sleep2 = function (time) {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve();
-//             console.log(3333);
-//         }, time)
-//     })
-// }
-// console.log(sleep2(3000))
-// console.log(`33333`)
-

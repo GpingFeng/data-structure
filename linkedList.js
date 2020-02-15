@@ -25,6 +25,7 @@ function LinkedList() {
         let node = new Node(element);
         let current = head;
         if (position > -1 && position <= length) {
+            // 头部特殊处理
             if (position === 0) {
                 node.next = current;
                 head = node;
@@ -62,6 +63,7 @@ function LinkedList() {
                     previous = current;
                     current = current.next;
                 }
+                // 这里就是要将它移除掉
                 previous.next = current.next;  
             }
             length--;
@@ -107,13 +109,12 @@ function LinkedList() {
 
 module.exports = LinkedList;
 
+// 测试用例
 let list = new LinkedList();
 list.append(10);
 list.print();
 list.append(15);
 list.print();
-// list.append(30);
-// list.print();
 list.insert(0, 1);
 list.print();
 list.insert(2, 3);
@@ -124,10 +125,3 @@ console.log(list.toString());
 console.log(list.indexOf());
 list.remove(1);
 list.print();
-// list.append(40);
-// list.print();
-// list.append(50);
-// list.print();
-// list.removeAt(3);
-// list.print();
-
