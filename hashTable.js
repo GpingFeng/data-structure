@@ -51,7 +51,7 @@ hash.print()
 
 // 处理散列表中的冲突
 // 分离链接
-var LinkedList = require('./20181230.js');  // 使用到之前的链表结构
+var LinkedList = require('./linkedList');  // 使用到之前的链表结构
 
 function HashTableSeparateLink() {
     var table = [];

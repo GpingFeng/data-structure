@@ -1,7 +1,7 @@
 // 图
-let Dictionary = require('./20190101.js');
-let Queue = require('./20181227Queue.js');
-let Stack = require('./20181227.js');
+let Dictionary = require('./dictionary');
+let Queue = require('./queue');
+let Stack = require('./stack');
 // console.log(Dictionary);
 console.log('====================================================');
 
